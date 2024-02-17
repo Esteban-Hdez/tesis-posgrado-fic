@@ -1,0 +1,30 @@
+\begin{titlepage}
+\centering
+\includesvg[width=3.7cm,height=3.2cm]{logos/uat.svg}\\ % Logo universidad
+{\large\bfseries POSGRADO E INVESTIGACIÓN}
+\vfill
+{\large\bfseries \MakeUppercase\elTitulo}
+\vfill
+{\large\bfseries \MakeUppercase\elEstudiante}
+\vfill
+{\large\bfseries \MakeUppercase{\tipoDocumento}}\\
+{\large PRESENTADA COMO REQUISITO PARCIAL}\\
+\ifnum\elgrado=1\relax
+    {\large PARA OBTENER EL GRADO}\\
+    {\large MAESTRO EN CIENCIAS}
+\else
+    \ifnum\elgrado=2\relax
+        {\large PARA OBTENER EL DIPLOMA DE}\\
+        {\large ESPECIALIDAD}
+    \fi
+\fi
+\vfill
+{\large\bfseries \MakeUppercase{\elPrograma}}
+\vfill
+\begingroup
+    \singlespacing
+    {\large\bfseries CD VICTORIA, TAMAULIPAS}\\
+    \vspace{-0.3cm} % Ajustar espacio si es necesario
+    {\large\bfseries \elanioTesis}
+\endgroup
+\end{titlepage}

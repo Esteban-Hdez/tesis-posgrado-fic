@@ -1,0 +1,44 @@
+\newpage
+\thispagestyle{empty} % Sin encabezado ni pie de página
+\begin{minipage}[t]{\linewidth}
+
+La presente \expandafter\makefirstuc\expandafter{\tipoDocumento} titulada: 
+\textbf{\MakeUppercase{\uline{\elTitulo}}.}
+\end{minipage}
+
+\vspace{1em} % Espacio después del título
+\noindent Fue realizada por: \textbf{\underline{\MakeUppercase{\elEstudiante}}} bajo la dirección del Comité Particular indicado, ha sido aprobada y aceptada por el mismo como requisito parcial para obtener el \ifnum\elgrado=1\relax
+        grado
+    \else
+        \ifnum\elgrado=2\relax
+            diploma
+        \fi
+    \fi de:
+
+\vspace{1em} % Espacio antes de "Maestro en Ciencias"
+\begin{center}
+    \ifnum\elgrado=1\relax
+        \textbf{\large{Maestro en Ciencias}}\\
+    \else
+        \ifnum\elgrado=2\relax
+            \textbf{\large{Especialidad}}\\
+        \fi
+    \fi
+    \vspace{1em}
+    \large COMITÉ PARTICULAR
+\end{center}
+\vspace{1em} % Espacio antes de la tabla
+
+% Tabla con columnas de ancho específico
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.5cm} >{\raggedright\arraybackslash}p{7.3cm} >{\raggedright\arraybackslash}p{3.5cm}@{}}
+Director de \expandafter\makefirstuc\expandafter{\tipoDocumento}: & \elDirectorTesis & \rule{3.5cm}{0.4pt} \\
+\ifdefined\elCodirectorTesis Codirector: & \elCodirectorTesis & \rule{3.5cm}{0.4pt} \\ \fi
+\ifdefined\elAsesorUno Asesor: & \elAsesorUno & \rule{3.5cm}{0.4pt} \\ \fi
+\ifdefined\elAsesorDos Asesor: & \elAsesorDos & \rule{3.5cm}{0.4pt} \\ \fi
+\ifdefined\elAsesorTres Asesor: & \elAsesorTres & \rule{3.5cm}{0.4pt} \\ \fi
+\ifdefined\elAsesorCuatro Asesor: & \elAsesorCuatro & \rule{3.5cm}{0.4pt} \\ \fi
+\ifdefined\elAsesorCinco Asesor: & \elAsesorCinco & \rule{3.5cm}{0.4pt} \\ \fi
+\end{tabular}
+
+\vspace{1em} % Espacio después de la tabla
+\hfill Cd. Victoria, Tam., \laFechaLiberacion % Fecha de liberación de tesis alineada a la derecha

@@ -1,0 +1,74 @@
+%----------------------------------------------------------------------------------------
+% II. REVISIÓN DE LITERATURA
+%----------------------------------------------------------------------------------------
+
+% Subtítulos de segundo nivel (sección)
+\section{Nombre de la Sección}
+Texto de la sección aquí.
+
+% Subtítulos de tercer nivel (subsección)
+\subsection{Nombre de la Subsección}
+Texto de la subsección aquí.
+
+% Subtítulos de cuarto nivel (subsubsección)
+\subsubsection{Nombre de la Subsubsección}
+Texto de la subsubsección aquí.
+
+% Subtítulos de quinto nivel (párrafo)
+\paragraph{Nombre del Párrafo}
+Texto del párrafo aquí.
+
+% Ejemplo de figura
+\begin{figure}[ht]
+    \centering
+    % Placeholder para la imagen
+    \fbox{\parbox{6cm}{\centering Placeholder de la imagen\\[1.5cm]Ejemplo de red neuronal}}
+    \caption[Ejemplo de una red neuronal]{Ejemplo de una red neuronal 1.}
+    \label{fig:red-neuronal}
+\end{figure}
+
+% Ejemplo de algoritmo
+\begin{algorithm}
+    \caption{Ejemplo de Uso de Red Neuronal Convolucional}
+    \begin{algorithmic}[1]
+        \Procedure{ClasificaciónConCNN}{$imagen$}
+            \State $resultado \gets \text{CNN}(imagen)$
+            \State \textbf{return} $resultado$
+        \EndProcedure
+    \end{algorithmic}
+    \label{alg:cnn}
+\end{algorithm}
+
+% Ejemplo de ecuación
+\begin{equation}
+    f(x) = \sigma(W \cdot x + b)
+    \label{eq:funcion_activacion}
+\end{equation}
+\equations{Función de activación sigmoide}
+
+% Para referenciar la ecuación en el texto, usar \ref{eq:funcion_activacion}.
+
+% Ejemplo de cuadro
+\begin{table}[ht]
+    \centering
+    \caption{Ejemplo de un cuadro de datos.}
+    \begin{tabular}{lcr}
+        \toprule
+        Columna 1 & Columna 2 & Columna 3 \\
+        \midrule
+        Datos 1 & Datos 2 & Datos 3 \\
+        Datos 4 & Datos 5 & Datos 6 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:ejemplo-datos}
+\end{table}
+% Para referenciar el cuadro en el texto, usar \ref{tab:ejemplo-datos}.
+
+% Ejemplo de como citar
+Como se discute en \cite{investigador2023}, las CNN son cruciales para el procesamiento de imágenes.
+
+% Ejemplo de nota al pie de página
+Este es un texto con una nota al pie de página\footnote{Aquí va el texto de la nota al pie de página.}.
+
+% Para referenciar figuras, cuadros, algoritmos, ecuaciones en el texto, usar \ref{label_del_elemento}.
+

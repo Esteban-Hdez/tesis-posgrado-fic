@@ -1,0 +1,37 @@
+% Comando para iniciar una nueva sección de apéndices
+\apendice{APÉNDICE CUADROS} % Inicia el apéndice de cuadros con el título "APÉNDICE CUADROS"
+
+% A continuación, se incluyen ejemplos de cómo añadir cuadros al apéndice.
+% Estos cuadros se añadirán a la lista de cuadros de apéndices automáticamente.
+
+% Ejemplo 1: Cuadro de datos básicos
+\begin{appendixtable}[ht]
+    \centering
+    \caption{Ejemplo de un cuadro de datos básicos.} % Título del cuadro
+    \begin{tabular}{ccr} % Estructura del cuadro: 3 columnas
+        \toprule
+        Columna A & Columna B & Columna C \\
+        \midrule
+        A1 & B1 & C1 \\
+        A2 & B2 & C2 \\
+        A3 & B3 & C3 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:cuadro-datos-basico} % Etiqueta para referencias cruzadas
+\end{appendixtable}
+
+% Ejemplo 2: Cuadro de datos avanzados
+\begin{appendixtable}[ht]
+    \centering
+    \caption{Ejemplo de un cuadro de datos avanzados.} % Título del cuadro
+    \begin{tabular}{l|c|r} % Estructura del cuadro: 3 columnas con líneas verticales
+        \toprule
+        Columna 1 & Columna 2 & Columna 3 \\
+        \midrule
+        Dato 1 & Dato 2 & Dato 3 \\
+        Dato 4 & Dato 5 & Dato 6 \\
+        Dato 7 & Dato 8 & Dato 9 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:cuadro-datos-avanzado} % Etiqueta para referencias cruzadas
+\end{appendixtable}

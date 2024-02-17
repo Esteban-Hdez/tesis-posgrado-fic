@@ -1,0 +1,86 @@
+%----------------------------------------------------------------------------------------
+% Plantilla LaTeX para Tesis o Tesina Posgrado FIC
+% Autor: Esteban Hernandez Santiago
+% Fecha de creación: 15/02/2024
+% Descripción: 
+%----------------------------------------------------------------------------------------
+
+\documentclass{tFIC3} % Define la clase del documento
+
+% Atributos de la tesis
+\tituloTesis{Titulo de la Tesis o Tesina} % Establece el título de la tesis.
+\nombreEstudiante{Nombre del Alumno} % Nombre del alumno autor de la tesis.
+\setTipoDocumento{tesis} % Define el tipo de documento (tesis o tesina).
+\nombrePrograma{MAESTRÍA EN CIENCIAS E INGENIERÍA DE DATOS} % Programa académico al que pertenece la tesis.
+\anio{2024} % Año de publicación de la tesis.
+\grado{1} % Nivel de grado (1 para Maestría, 2 para Especialidad).
+
+\directorTesis{Nombre del Director} % Director de tesis.
+\codirectorTesis{Nombre del Codirector} % Codirector de tesis, opcional.
+\asesorUno{Nombre del Asesor 1} % Primer asesor de tesis.
+\asesorDos{Nombre del Asesor 2} % Segundo asesor de tesis, opcional.
+% \asesorTres{Nombre del Asesor 3} % Tercer asesor de tesis, opcional.
+% \asesorCuatro{Nombre del Asesor 4} % cuarto asesor de tesis, opcional.
+% \asesorCinco{Nombre del Asesor 5} % Quinto asesor de tesis, opcional.
+\fechaLiberacion{15}{mayo}{2024} % Fecha de liberación de la tesis.
+
+% Otros paquetes para algoritmos, ecuaciones, texto de relleno, y tablas mejoradas.
+\usepackage{graphicx} % Paquete para incluir imágenes.
+\usepackage{algorithm} % Para algoritmos
+\usepackage{algpseudocode} % Para pseudocódigo en algoritmos
+\usepackage{amsmath} % Para ecuaciones avanzadas
+\usepackage{lipsum} % Para texto de relleno
+\usepackage{booktabs} % Para tablas mejoradas
+
+% Archivo de bibliografía
+\addbibresource{referencias.bib} % Añade el archivo de bibliografía.
+
+\begin{document}
+
+% Elementos preliminares del documento (portada, contraportada, hoja de aprobación, etc.)
+\portada
+\contraportada
+\hojaAprobacion
+
+\agradecimientos % Opcional
+\dedicatoria % Opcional
+
+% Configuracion de numeración estilo romano
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+% Tablas de contenido
+\contenido % Genera la tabla de contenidos.
+\indiceFiguras % Lista de figuras.
+\indiceCuadros % Lista de cuadros o tablas.
+% Otros índices para ecuaciones, algoritmos, y apéndices.
+\indiceEcuaciones % Opcional
+\indiceAlgoritmos % Opcional
+\indiceApendiceFiguras % Opcional
+\indiceApendiceCuadros % Opcional
+
+\resumen % Sección de resumen.
+\summary % Sección de resumen en inglés.
+
+% Configuracion de numeración estilo arábigo
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% CAPITULOS
+\introduccion % I. INTRODUCCIÓN
+\revisionLiteratura % II. REVISÍON DE LITERATURA
+\materialesMetodos % III. MATERIALES Y MÉTODOS
+\resultadosDiscusion % IV. RESULTADOS Y CONCLUSIÓN
+\conclusiones % V. CONCLUSIONES
+\bibliografia % VI. BIBLIOGRAFÍA
+
+% APÉNDICES
+\iniciarApendices % Comando para iniciar la sección de apéndices.
+
+% Añadir un apéndice de figuras
+\input{Apendices/Apendice-A} % Opcional
+
+% Añadir el apéndice de cuadros
+\input{Apendices/Apendice-B} % Opcional
+
+\end{document}

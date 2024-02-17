@@ -1,0 +1,21 @@
+% Comando para iniciar una nueva sección de apéndices
+\apendice{APÉNDICE FIGURAS} % Inicia el apéndice de figuras con el título "APÉNDICE FIGURAS"
+
+% A continuación, se incluyen ejemplos de cómo añadir figuras al apéndice.
+% Estas figuras se añadirán a la lista de figuras de apéndices automáticamente.
+
+% Ejemplo 1: Figura simple
+\begin{appendixfigure}[htbp]
+    \centering
+    \includegraphics[width=0.75\linewidth]{example-image} % Ruta a la imagen
+    \caption{Una descripción de la figura} % Título de la figura
+    \label{fig:apendiceFigura} % Etiqueta para referencias cruzadas
+\end{appendixfigure}
+
+% Ejemplo 2: Figura con posición forzada (aquí)
+\begin{appendixfigure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Imagenes/image.png} % Ruta a la imagen
+    \caption{\lipsum[1][1-2]} % Título de la figura con texto de ejemplo
+    \label{fig:apendice} % Etiqueta para referencias cruzadas
+\end{appendixfigure}
